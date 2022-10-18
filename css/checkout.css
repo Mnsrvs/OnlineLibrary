@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(156, 112, 112);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-container {
+  background-color: bisque;
+  padding: 11px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}
+
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(156, 112, 112);
+  text-decoration-thickness: 5px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgb(180 170 170);
+  margin: 150px 0;
+  padding: 50px;
+  width: max-content;
+  border-radius: 5px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.information p {
+  margin-bottom: 0;
+}
+
+.information input,
+.payment .account-form {
+  width: 500px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + i {
+  cursor: pointer;
+}
+
+.payment p {
+  margin-bottom: 0;
+}
+
+.checkout-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.checkout-btn a {
+  text-decoration: none;
+  background-color: rgb(255 228 196);
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  transition: 0.3s;
+}
+
+.checkout-btn a:hover {
+  background-color: black;
+  color: rgb(255 228 196);
+}
+
+.fa-money-bill {
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .form-container {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .form-container {
+    font-size: 12px;
+  }
+
+  .input-form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .information input,
+  .payment .account-form{
+    width: 200px;
+  }
+}
